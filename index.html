@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JR Dev Day 행사 안내 페이지">
+  <title>JR Dev Day 2026</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <script type="module" src="src/menu.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="JR Dev Day 홈">JR <span>DEV DAY</span></a>
+    <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+      <span class="menu-icon" aria-hidden="true">☰</span><span>메뉴</span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="주요 메뉴">
+      <a href="#about">행사 소개</a><a href="#sessions">세션</a><a href="#schedule">시간표</a><a class="nav-cta" href="#register">참가 신청</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">BEGINNER FRIENDLY · 2026.10.24</p>
+        <h1>처음 만드는 서비스도<br><em>함께라면 배포까지.</em></h1>
+        <p>짧은 강연과 실습으로 GitHub 협업, 반응형 화면, AI 기능 연결을 한 번에 경험하는 하루입니다.</p>
+        <div class="hero-actions"><a class="button primary" href="#register">무료로 신청하기</a><a class="button secondary" href="#sessions">세션 보기</a></div>
+      </div>
+      <aside class="hero-ticket" aria-label="행사 요약">
+        <p>JR DEV DAY</p><strong>10.24</strong><span>토요일 13:00 - 18:00</span><span>대전 청년창업센터</span><code>JR-2026-RESPONSIVE-LAB</code>
+      </aside>
+    </section>
+
+    <section class="section" id="about">
+      <p class="eyebrow">ABOUT</p><h2>듣는 시간보다<br>직접 바꾸는 시간이 깁니다.</h2>
+      <div class="stats"><p><strong>5H</strong><span>강연과 실습</span></p><p><strong>3</strong><span>핵심 세션</span></p><p><strong>1</strong><span>완성 프로젝트</span></p></div>
+    </section>
+
+    <section class="section sessions" id="sessions">
+      <div class="section-heading"><div><p class="eyebrow">SESSIONS</p><h2>오늘의 세션</h2></div><p>카드가 작은 화면에서 어떻게 재배치되어야 하는지 관찰하세요.</p></div>
+      <div class="session-grid">
+        <article class="session-card"><span>01</span><h3>GitHub로 함께 만들기</h3><p>Branch, Commit, Pull Request를 사용해 한 저장소에서 충돌 없이 작업합니다.</p><b>13:20 · 50분</b></article>
+        <article class="session-card featured"><span>02</span><h3>모바일 화면 다시 설계하기</h3><p>고정 너비와 넘침을 찾아 유동 레이아웃과 Media Query로 수정합니다.</p><b>14:30 · 70분</b></article>
+        <article class="session-card"><span>03</span><h3>서비스에 AI 기능 연결하기</h3><p>준비된 Tool을 수정하고 AI가 실제 함수를 선택해 실행하게 만듭니다.</p><b>16:10 · 60분</b></article>
+      </div>
+    </section>
+
+    <section class="section schedule-section" id="schedule">
+      <p class="eyebrow">SCHEDULE</p><h2>시간표</h2>
+      <div class="schedule" role="list">
+        <article role="listitem"><time>13:00</time><div><h3>입장과 환경 확인</h3><p>Wi-Fi, WSL, GitHub 로그인을 확인합니다.</p></div><span>30분</span></article>
+        <article role="listitem"><time>13:30</time><div><h3>팀 개발 실습</h3><p>팀 소개 페이지를 Branch별로 완성합니다.</p></div><span>50분</span></article>
+        <article role="listitem"><time>14:30</time><div><h3>반응형 UI 실습</h3><p>360px 화면에서 깨지는 페이지를 고칩니다.</p></div><span>70분</span></article>
+        <article role="listitem"><time>16:10</time><div><h3>AI Tool 실습</h3><p>새 Tool을 추가하고 실행 기록을 확인합니다.</p></div><span>60분</span></article>
+      </div>
+    </section>
+
+    <section class="section register" id="register">
+      <div><p class="eyebrow">REGISTER</p><h2>작은 화면에서도<br>신청 버튼이 보여야 합니다.</h2><p>신청은 예제 동작입니다. 버튼 크기, 줄바꿈, 키보드 Focus를 확인하세요.</p></div>
+      <a class="button primary register-button" href="mailto:jr-dev-day@example.com?subject=JR%20Dev%20Day%20신청">이메일로 참가 신청</a>
+    </section>
+  </main>
+  <footer><span>JR DEV DAY 2026</span><span>Build · Test · Share</span></footer>
+</body>
+</html>
